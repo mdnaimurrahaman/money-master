@@ -13,9 +13,9 @@
 </head>
 <body>
      <!-- Top-section -->
-     <section class="container my-5">
+     <section class="container ">
         <div>
-          <h1 class="text-center my-5 fw-bold">Money Heist</h1>
+          <h1 class="text-center my-4 fw-bold">Money Heist</h1>
         </div>
         <!-- Top image side -->
         <div class="row d-flex align-items-center justify-content-center">
@@ -30,41 +30,41 @@
                     <h3 class="text-center mb-4">Income</h3>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text">Income</span>
-                        <input id="income" type="number" class="form-control" placeholder="Your Income" aria-label="Username" aria-describedby="addon-wrapping">
+                        <input id="income-field" type="number" class="form-control" placeholder="Your Income" aria-label="Username" aria-describedby="addon-wrapping">
                     </div>
                     <h3 class="text-center my-4">Expenses</h3>
                     <div class="input-group flex-nowrap mb-4">
                         <span class="input-group-text" id="addon-wrapping">Food</span>
-                        <input id="food-costs" type="number" class="form-control" placeholder="Food costs" aria-label="Username" aria-describedby="addon-wrapping">
+                        <input id="food-field" type="number" class="form-control" placeholder="Food costs" aria-label="Username" aria-describedby="addon-wrapping">
                     </div>
                     <div class="input-group flex-nowrap mb-4">
                         <span class="input-group-text" id="addon-wrapping">Rent</span>
-                        <input id="rent-costs" type="number" class="form-control" placeholder="Rent costs" aria-label="Username" aria-describedby="addon-wrapping">
+                        <input id="rent-field" type="number" class="form-control" placeholder="Rent costs" aria-label="Username" aria-describedby="addon-wrapping">
                     </div>
                     <div class="input-group flex-nowrap mb-4">
                         <span class="input-group-text" id="addon-wrapping">Clothes</span>
-                        <input id="clothes-costs" type="number" class="form-control" placeholder="Clothes costs" aria-label="Username" aria-describedby="addon-wrapping">
+                        <input id="clothes-field" type="number" class="form-control" placeholder="Clothes costs" aria-label="Username" aria-describedby="addon-wrapping">
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button onclick="calculate()" class="hero-btn">Calculate</button>
+                        <button onclick="calculate()" id="calculate-button" class="hero-btn">Calculate</button>
                     </div>
-                    <h5 class="my-4 text-center">Total Expenses: <span id="total-expenses">5500</span> </h5>
-                    <h5 class="mb-4 text-center">Balance: <span id="total-balance">5500</span> </h5>
+                    <h5 class="my-4 text-center">Total Expenses: <span id="total-expenses">00</span> </h5>
+                    <h5 class="mb-4 text-center">Balance: <span id="balanceId">00</span> </h5>
                     <div class="row text-center align-items-center  justify-content-center  d-flex m-5">
-                        <div class="col-lg-4 ">
+                        <div class="col-lg-7">
                           <div class="input-group  my-3">
                             <span class="input-group-text">Save :</span>
-                            <input id="save-input" type="number" aria-label="First name" class="form-control">
+                            <input id="save_field" type="number" aria-label="First name" class="form-control">
                           </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-1">
                           <h5><span>%</span></h5>
                         </div>
                         <div class="col-lg-4">
-                          <button onclick="saveButton()" class=" hero-btn btn btn-info text-white  ">Save</button>
+                          <button onclick="saveButton()" id="save-btn-hero" class=" hero-btn btn btn-info text-white  ">Save</button>
                         </div>
-                        <h5 class="my-4 text-center">Saving Amount:<span id="saving-amount">5500</span> </h5>
-                        <h5 class="text-center">Remaining Balance:<span id="remaining-balance">5500</span> </h5>
+                        <h5 class="my-4 text-center">Saving Amount: <span id="saving-amount">00</span> </h5>
+                        <h5 class="text-center">Remaining Balance: <span id="remaining-balance">00</span> </h5>
         
                </div>
       </section>
