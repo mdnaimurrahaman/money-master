@@ -12,19 +12,7 @@
     
 }
 
-.box{
-    display: flex;
-    flex-direction: column;
-}
-.side{
-    display: flex;
-    flex-direction: column;
-}
-.onside{
-    display: flex;
-    flex-direction: column;
-}
-.on{
-    display: flex;
-    flex-direction: column;
+.new-box{
+    font-size: 20px;
+    color: #0c0265;
 }
