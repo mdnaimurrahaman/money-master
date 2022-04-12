@@ -11,3 +11,8 @@
     padding:20px 40px;
     
 }
+
+.box{
+    display: flex;
+    flex-direction: column;
+}
